@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Preço Ideal - Markup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Calculadora de Preço (Markup)</h1>
+      <p class="small">
+        Insira os valores e veja o preço sugerido com base no seu markup.
+      </p>
+
+      <label>Matéria-prima (por unidade)</label>
+      <input id="material" type="number" min="0" step="0.01" value="0" />
+
+      <label>Mão de obra (por unidade)</label>
+      <input id="mao" type="number" min="0" step="0.01" value="0" />
+
+      <label>Outros custos variáveis (por unidade)</label>
+      <input id="outros" type="number" min="0" step="0.01" value="0" />
+
+      <label>Custo fixo total</label>
+      <input id="fixo" type="number" min="0" step="0.01" value="0" />
+
+      <label>Produção estimada (quantidade de unidades)</label>
+      <input id="producao" type="number" min="1" step="1" value="1" />
+
+      <label>Markup desejado (%)</label>
+      <input id="markup" type="number" min="0" step="0.1" value="30" />
+
+      <div class="buttons">
+        <button id="calcular">Calcular</button>
+        <button id="limpar">Limpar</button>
+      </div>
+
+      <div id="saida" class="result" style="display: none"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
